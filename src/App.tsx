@@ -64,13 +64,10 @@ export default function App() {
     }
 
     try {
-      const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
-
       const response = await ai.models.generateContent({
-        model: "gemini-1.5-flash",
-        contents: `You are a world-class startup investor and market analyst.
-Analyze the following startup idea.
-
+  model: "gemini-1.5-flash",
+  contents: `You are a world-class startup investor and market analyst.
+     
 Respond ONLY in JSON with keys:
 marketPotential
 risks
