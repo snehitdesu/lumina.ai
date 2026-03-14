@@ -122,7 +122,7 @@ export default function App() {
       const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
       
       const response = await ai.models.generateContent({
-        model: "gemini-3.1-pro-preview",
+        model: "gemini-1.5-flash"
         contents: `You are a world-class startup investor and market analyst. 
         Analyze the following startup idea. Use your search capabilities to check for existing competitors, market trends, and potential barriers to entry.
         
