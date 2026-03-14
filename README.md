@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Lumina AI
 
-# Run and deploy your AI Studio app
+Lumina AI is an AI-powered flashcard generation platform that helps students learn faster by automatically creating study flashcards from any topic.
 
-This contains everything you need to run your app locally.
+## Features
+- AI-powered flashcard generation using Gemini API
+- Interactive flashcard UI
+- Smart learning interface
+- Modern React + Tailwind UI
 
-View your app in AI Studio: https://ai.studio/apps/3729d16b-5ee9-4ba6-9b07-f90909b3b2b0
+## Tech Stack
+- React
+- Vite
+- Tailwind CSS
+- Gemini API
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+Install dependencies
 
+npm install
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Start the development server
+
+npm run dev
