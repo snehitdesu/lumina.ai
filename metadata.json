@@ -1,0 +1,9 @@
+{
+  "name": "Lumina AI",
+  "description": "A cinematic, immersive AI sanctuary with high-fidelity visuals and refined typography.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

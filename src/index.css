@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  --color-obsidian: #050505;
+  --color-lumina: #bc13fe;
+  --color-lumina-alt: #4a00e0;
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-obsidian text-white/90 font-sans antialiased selection:bg-lumina/30;
+  }
+}
+
+.atmosphere-bg {
+  background: 
+    radial-gradient(circle at 50% -20%, rgba(188, 19, 254, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at -10% 80%, rgba(74, 0, 224, 0.1) 0%, transparent 40%);
+}
+
+.glass-panel {
+  @apply bg-glass backdrop-blur-3xl border border-glass-border rounded-[40px];
+}
+
+.markdown-body {
+  @apply font-serif text-lg leading-relaxed text-white/80;
+}
+
+.markdown-body h1, .markdown-body h2 {
+  @apply font-serif italic text-white mb-4;
+}
+
+.markdown-body p {
+  @apply mb-4;
+}
